@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Anton&family=Bacasime+Antique&family=Bruno+Ace+SC&family=Dongle:wght@700&family=Lobster&family=Merriweather:wght@900&family=Overpass:wght@200&family=PT+Sans+Narrow&family=Rajdhani:wght@600&family=Roboto:ital,wght@0,100;0,400;0,500;1,400&family=Sacramento&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1 class="text-center m-5 ps-5">Weather Forecast <i class="fa-sharp fa-solid fa-cloud-bolt fa-fade"></i></h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 d-flex justify-content-center">
+                <div class="col-8">
+                    <input id="searchPlace" type="text" placeholder="Search Location" class="form-control">
+                </div>
+                <div>
+                    <button class="btn btn-light searchbutt " onclick="searchdata()"><i class="fa-solid fa-magnifying-glass fa-flip fa-lg"></i></button>
+                </div>
+            </div>
+            <div class="col-3"></div>
+
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 col_6 mt-3 border d-flex">
+                <div class="col-4    classa" id="a"></div>
+                <div class="col-4  text-center">
+                    <h3 class="heading1">Weather</h3>
+                    <h4 class="classb" id="b"></h4>
+
+                </div>
+                <div class="col-4  text-end classc" id="c"></div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
